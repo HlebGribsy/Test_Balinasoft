@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  ViewControllerView.swift
 //  Test_Balinasoft
 //
-//  Created by Hleb Karpovich on 30.12.23.
+//  Created by Hleb Karpovich on 6.01.24.
 //
 
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+final class ViewControllerView: UIView {
     
     lazy var photoCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -19,38 +19,26 @@ class ViewController: UIViewController {
         collectionView.showsVerticalScrollIndicator = false
         collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         collectionView.isPagingEnabled = true
-        collectionView.backgroundColor = UIColor(named: "backgroundVC")
+        collectionView.backgroundColor = .mainBackground
         return collectionView
     }()
     
-    var photoTypes: [Content] = []
     var layout = UICollectionViewFlowLayout()
-    var currentPage = 0
-    var totalPage = 6
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(photoCollectionView)
-        self.view.backgroundColor = UIColor(named: "backgroundVC")
-        
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupConstraints()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupConstraints() {
+        addSubview(photoCollectionView)
         photoCollectionView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview().inset(5)
             make.leading.trailing.equalToSuperview().inset(15)
-        }
-        
-        getPhotoTypes()
-        setupCollectionView()
-    }
-    
-    private func getPhotoTypes() {
-        Task {
-            do {
-                let photos = try await ApiManager.shared.getPhotoType(numberOfPage: currentPage)
-                self.photoTypes = photos.content
-                self.photoCollectionView.reloadData()
-            } catch {
-                print(error.localizedDescription)
-            }
         }
     }
 }

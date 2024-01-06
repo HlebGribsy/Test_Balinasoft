@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-    
+
     private lazy var mainView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -28,14 +28,14 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     private lazy var idLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "textColor")
+        label.textColor = .textColor
         return label
     }()
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "textColor")
+        label.textColor = .textColor
         return label
     }()
     
@@ -74,16 +74,18 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func setPhotoType(info: Content) {
-        nameLabel.text = info.name
-        idLabel.text = String("\(info.id)")
-        let currentImageURL = info.image ?? ""
-        if let url = URL(string: currentImageURL) {
+    func setPhoto(url: String) {
+        if let url = URL(string: url) {
             photoImageView.sd_setImage(with: url)
-            photoImageView.sd_imageIndicator?.startAnimatingIndicator()
         } else {
             photoImageView.image = UIImage(named: "noImage")
         }
     }
     
+    func setPhotoType(info: Content) {
+        nameLabel.text = info.name
+        idLabel.text = String("\(info.id)")
+        let currentImageURL = info.image ?? ""
+        setPhoto(url: currentImageURL)
+    }
 }

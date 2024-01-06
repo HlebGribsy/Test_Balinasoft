@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F69CE6502B47AB20004AC288 /* Multipart in Frameworks */ = {isa = PBXBuildFile; productRef = F69CE64F2B47AB20004AC288 /* Multipart */; };
+		F69CE6532B497CC9004AC288 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69CE6522B497CC9004AC288 /* UIColor + Extension.swift */; };
+		F6A2BBBD2B499765009AC635 /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2BBBC2B499765009AC635 /* ViewControllerView.swift */; };
 		F6C393AF2B3F98270088CBA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393AE2B3F98270088CBA6 /* AppDelegate.swift */; };
 		F6C393B12B3F98270088CBA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393B02B3F98270088CBA6 /* SceneDelegate.swift */; };
 		F6C393B32B3F98270088CBA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393B22B3F98270088CBA6 /* ViewController.swift */; };
 		F6C393B82B3F98280088CBA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C393B72B3F98280088CBA6 /* Assets.xcassets */; };
 		F6C393BB2B3F98280088CBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C393B92B3F98280088CBA6 /* LaunchScreen.storyboard */; };
-		F6C393C42B3F983C0088CBA6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6C393C32B3F983C0088CBA6 /* SnapKit */; };
-		F6C393C62B3F983C0088CBA6 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F6C393C52B3F983C0088CBA6 /* SnapKit-Dynamic */; };
 		F6C393C92B3F98420088CBA6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F6C393C82B3F98420088CBA6 /* SDWebImage */; };
 		F6C393CB2B3F98420088CBA6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6C393CA2B3F98420088CBA6 /* SDWebImageMapKit */; };
-		F6C393D02B3F9A000088CBA6 /* PhotoTypeDtoOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393CF2B3F9A000088CBA6 /* PhotoTypeDtoOut.swift */; };
+		F6C393D02B3F9A000088CBA6 /* PhotoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393CF2B3F9A000088CBA6 /* PhotoType.swift */; };
 		F6C393D32B3F9A280088CBA6 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393D22B3F9A280088CBA6 /* ApiManager.swift */; };
 		F6C393D52B3F9D5E0088CBA6 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393D42B3F9D5E0088CBA6 /* PhotoCollectionViewCell.swift */; };
-		F6C393D92B3FCAD30088CBA6 /* ViewController + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393D82B3FCAD30088CBA6 /* ViewController + CollectionView.swift */; };
+		F6C393D92B3FCAD30088CBA6 /* ExtensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C393D82B3FCAD30088CBA6 /* ExtensionsViewController.swift */; };
+		F6EB55382B40B9350022752B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6EB55372B40B9350022752B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F69CE6522B497CC9004AC288 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		F6A2BBBC2B499765009AC635 /* ViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
 		F6C393AB2B3F98270088CBA6 /* Test_Balinasoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Balinasoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C393AE2B3F98270088CBA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C393B02B3F98270088CBA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,10 +34,10 @@
 		F6C393B72B3F98280088CBA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6C393BA2B3F98280088CBA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6C393BC2B3F98280088CBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6C393CF2B3F9A000088CBA6 /* PhotoTypeDtoOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTypeDtoOut.swift; sourceTree = "<group>"; };
+		F6C393CF2B3F9A000088CBA6 /* PhotoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoType.swift; sourceTree = "<group>"; };
 		F6C393D22B3F9A280088CBA6 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F6C393D42B3F9D5E0088CBA6 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		F6C393D82B3FCAD30088CBA6 /* ViewController + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + CollectionView.swift"; sourceTree = "<group>"; };
+		F6C393D82B3FCAD30088CBA6 /* ExtensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,16 +45,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6EB55382B40B9350022752B /* SnapKit in Frameworks */,
 				F6C393C92B3F98420088CBA6 /* SDWebImage in Frameworks */,
-				F6C393C42B3F983C0088CBA6 /* SnapKit in Frameworks */,
 				F6C393CB2B3F98420088CBA6 /* SDWebImageMapKit in Frameworks */,
-				F6C393C62B3F983C0088CBA6 /* SnapKit-Dynamic in Frameworks */,
+				F69CE6502B47AB20004AC288 /* Multipart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F69CE6512B497CAA004AC288 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F69CE6522B497CC9004AC288 /* UIColor + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6A2BBBE2B499A06009AC635 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6C393B22B3F98270088CBA6 /* ViewController.swift */,
+				F6A2BBBC2B499765009AC635 /* ViewControllerView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F6C393A22B3F98270088CBA6 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +93,7 @@
 			children = (
 				F6C393D12B3F9A170088CBA6 /* API */,
 				F6C393CC2B3F984D0088CBA6 /* Application */,
+				F69CE6512B497CAA004AC288 /* Extension */,
 				F6C393CD2B3F98580088CBA6 /* Presentation */,
 				F6C393CE2B3F98610088CBA6 /* Supporting */,
 			);
@@ -90,9 +112,9 @@
 		F6C393CD2B3F98580088CBA6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F6C393B22B3F98270088CBA6 /* ViewController.swift */,
-				F6C393D82B3FCAD30088CBA6 /* ViewController + CollectionView.swift */,
+				F6A2BBBE2B499A06009AC635 /* ViewController */,
 				F6C393D42B3F9D5E0088CBA6 /* PhotoCollectionViewCell.swift */,
+				F6C393D82B3FCAD30088CBA6 /* ExtensionsViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -111,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F6C393D22B3F9A280088CBA6 /* ApiManager.swift */,
-				F6C393CF2B3F9A000088CBA6 /* PhotoTypeDtoOut.swift */,
+				F6C393CF2B3F9A000088CBA6 /* PhotoType.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -133,10 +155,10 @@
 			);
 			name = Test_Balinasoft;
 			packageProductDependencies = (
-				F6C393C32B3F983C0088CBA6 /* SnapKit */,
-				F6C393C52B3F983C0088CBA6 /* SnapKit-Dynamic */,
 				F6C393C82B3F98420088CBA6 /* SDWebImage */,
 				F6C393CA2B3F98420088CBA6 /* SDWebImageMapKit */,
+				F6EB55372B40B9350022752B /* SnapKit */,
+				F69CE64F2B47AB20004AC288 /* Multipart */,
 			);
 			productName = Test_Balinasoft;
 			productReference = F6C393AB2B3F98270088CBA6 /* Test_Balinasoft.app */;
@@ -167,8 +189,9 @@
 			);
 			mainGroup = F6C393A22B3F98270088CBA6;
 			packageReferences = (
-				F6C393C22B3F983C0088CBA6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F6C393C72B3F98420088CBA6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F6EB55362B40B9350022752B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F69CE64E2B47AB20004AC288 /* XCRemoteSwiftPackageReference "Multipart" */,
 			);
 			productRefGroup = F6C393AC2B3F98270088CBA6 /* Products */;
 			projectDirPath = "";
@@ -197,11 +220,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C393B32B3F98270088CBA6 /* ViewController.swift in Sources */,
+				F69CE6532B497CC9004AC288 /* UIColor + Extension.swift in Sources */,
 				F6C393AF2B3F98270088CBA6 /* AppDelegate.swift in Sources */,
 				F6C393D32B3F9A280088CBA6 /* ApiManager.swift in Sources */,
-				F6C393D92B3FCAD30088CBA6 /* ViewController + CollectionView.swift in Sources */,
+				F6C393D92B3FCAD30088CBA6 /* ExtensionsViewController.swift in Sources */,
 				F6C393B12B3F98270088CBA6 /* SceneDelegate.swift in Sources */,
-				F6C393D02B3F9A000088CBA6 /* PhotoTypeDtoOut.swift in Sources */,
+				F6C393D02B3F9A000088CBA6 /* PhotoType.swift in Sources */,
+				F6A2BBBD2B499765009AC635 /* ViewControllerView.swift in Sources */,
 				F6C393D52B3F9D5E0088CBA6 /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G74Y6W9VTA;
@@ -358,8 +384,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.Test-Balinasoft";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Balinasoft";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -374,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G74Y6W9VTA;
@@ -388,8 +416,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.Test-Balinasoft";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Balinasoft";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -423,12 +452,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F6C393C22B3F983C0088CBA6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		F69CE64E2B47AB20004AC288 /* XCRemoteSwiftPackageReference "Multipart" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			repositoryURL = "https://github.com/Fyrts/Multipart";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.0;
+				minimumVersion = 0.1.2;
 			};
 		};
 		F6C393C72B3F98420088CBA6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
@@ -439,18 +468,21 @@
 				minimumVersion = 5.18.8;
 			};
 		};
+		F6EB55362B40B9350022752B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F6C393C32B3F983C0088CBA6 /* SnapKit */ = {
+		F69CE64F2B47AB20004AC288 /* Multipart */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6C393C22B3F983C0088CBA6 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		F6C393C52B3F983C0088CBA6 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6C393C22B3F983C0088CBA6 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			package = F69CE64E2B47AB20004AC288 /* XCRemoteSwiftPackageReference "Multipart" */;
+			productName = Multipart;
 		};
 		F6C393C82B3F98420088CBA6 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -461,6 +493,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F6C393C72B3F98420088CBA6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		F6EB55372B40B9350022752B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6EB55362B40B9350022752B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
