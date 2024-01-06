@@ -8,8 +8,9 @@
 - Когда снимок сделан - отправляется POST-запрос на сервер с идентификатором нажатого элемента, ФИО разработчика и фото с камеры "
 
 Экран со списком:
-![Main screenshot](https://github.com/HlebGribsy/Test_Balinasoft/blob/main/screenMain.jpg)
+<p align="left">
+<img src="https://github.com/HlebGribsy/Test_Balinasoft/blob/main/screenMain.jpg"  alt="image" width="300" height="auto">
 
 Response body:
-![Response body](https://github.com/HlebGribsy/Test_Balinasoft/blob/main/responseBody.jpg)
-
+<p align="left">
+<img src="https://github.com/HlebGribsy/Test_Balinasoft/blob/main/responseBody.jpg"  alt="image" width="500" height="auto">
