@@ -1,4 +1,5 @@
 # Test_Balinasoft
+<<<<<<< HEAD
 
 Тестовое задание для BalinaSoft.
 
@@ -14,3 +15,5 @@
 Response bodies:
 <p align="left">
 <img src="https://github.com/HlebGribsy/Test_Balinasoft/blob/develop/rb.jpg"  alt="image" width="500" height="auto">
+=======
+>>>>>>> d9bbe831952a025d112ee0305add33ab4de8d5c1
