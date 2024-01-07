@@ -1,5 +1,5 @@
 //
-//  ViewControllerView.swift
+//  PhotoListViewController.swift
 //  Test_Balinasoft
 //
 //  Created by Hleb Karpovich on 6.01.24.
@@ -8,22 +8,19 @@
 import UIKit
 import SnapKit
 
-final class ViewControllerView: UIView {
+final class PhotoListViewControllerView: UIView {
     
     lazy var photoCollectionView: UICollectionView = {
+        var layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 15
         layout.itemSize = CGSize(width: 170, height: 265)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: "PhotoCollectionViewCell")
-        collectionView.isPagingEnabled = true
         collectionView.backgroundColor = .mainBackground
         return collectionView
     }()
-    
-    var layout = UICollectionViewFlowLayout()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

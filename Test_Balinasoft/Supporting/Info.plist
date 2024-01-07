@@ -19,7 +19,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Разрешите доступ, чтобы сделать фото 📷</string>
 </dict>
 </plist>
